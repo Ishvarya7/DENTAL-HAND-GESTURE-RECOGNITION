@@ -1,0 +1,14 @@
+<html>
+<head><title>Dental Sign Detection</title>
+<link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+<script type="text/javascript" src="{{url_for('static',filename='javascript/script.js')}}"></script>
+</head>
+<body onload="speakText()">
+<h1>Dental Sign Recognition</h1>
+<button id="speak_button" onClick="speakText()">Speak</button>
+
+<img id="bg" src="{{ url_for('video_feed')}}" width="75%" height="85%">
+
+</body>
+</html>
+
